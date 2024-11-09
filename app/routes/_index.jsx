@@ -100,8 +100,8 @@ function FeaturedCollection({collection}) {
  */
 function RecommendedProducts({products}) {
   return (
-    <div className="recommended-products">
-            
+      <div className="recommended-products">
+          <h1>Harrys Test</h1>
       <h2>Recommended Products</h2>
       <Suspense fallback={<div>Loading...</div>}>
         <Await resolve={products}>
