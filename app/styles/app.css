@@ -484,3 +484,6 @@ button.reset:hover:not(:has(> *)) {
 .account-logout {
   display: inline-block;
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
