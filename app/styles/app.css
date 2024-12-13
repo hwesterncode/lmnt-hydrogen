@@ -515,4 +515,7 @@ a {
   margin-top: 2rem;
 }.product-price {
   color: green;
+}p {
+  font-size: 1.3rem;
+  line-height: 1.4;
 }
