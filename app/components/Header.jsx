@@ -11,7 +11,7 @@ export function Header({header, isLoggedIn, cart, publicStoreDomain}) {
   return (
     <header className="header">
       <NavLink prefetch="intent" to="/" style={activeLinkStyle} end>
-        <strong>Montana Outdoor Store</strong>
+        <strong>MT Outdoor Store</strong>
       </NavLink>
       <HeaderMenu
         menu={menu}
@@ -53,6 +53,7 @@ export function HeaderMenu({
         >
           Home
         </NavLink>
+     
       )}
       {(menu || FALLBACK_HEADER_MENU).items.map((item) => {
         if (!item.url) return null;
@@ -74,7 +75,7 @@ export function HeaderMenu({
             style={activeLinkStyle}
             to={url}
           >
-            {item.title}
+         
           </NavLink>
         );
       })}
@@ -89,14 +90,8 @@ function HeaderCtas({isLoggedIn, cart}) {
   return (
     <nav className="header-ctas" role="navigation">
       <HeaderMenuMobileToggle />
-      <NavLink prefetch="intent" to="/account" style={activeLinkStyle}>
-        <Suspense fallback="Sign in">
-          <Await resolve={isLoggedIn} errorElement="Sign in">
-            {(isLoggedIn) => (isLoggedIn ? 'Account' : 'Sign in')}
-          </Await>
-        </Suspense>
-      </NavLink>
-      <SearchToggle />
+    
+     
       <CartToggle cart={cart} />
     </nav>
   );
@@ -118,7 +113,6 @@ function SearchToggle() {
   const {open} = useAside();
   return (
     <button className="reset" onClick={() => open('search')}>
-      Search
     </button>
   );
 }
