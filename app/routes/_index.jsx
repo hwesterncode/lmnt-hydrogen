@@ -88,7 +88,7 @@ function FeaturedCollection({collection}) {
           <Image data={image} sizes="100vw" />
         </div>
       )}
-      <h1>{collection.title}</h1>
+   
     </Link>
   );
 }
