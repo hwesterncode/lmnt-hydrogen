@@ -7,7 +7,7 @@ import {Image, Money} from '@shopify/hydrogen';
  * @type {MetaFunction}
  */
 export const meta = () => {
-  return [{title: 'Montana Outdoor Store'}];
+  return [{title: 'Montana Outdoor Ad Network'}];
 };
 
 /**

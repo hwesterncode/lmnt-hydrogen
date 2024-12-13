@@ -502,3 +502,7 @@ a {
   display: block;
   margin-bottom: 11px;
 }
+.product-main img {
+  max-width: 100%;
+  margin-left: -19px;
+}
