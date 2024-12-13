@@ -7,7 +7,7 @@ import {Image, Money} from '@shopify/hydrogen';
  * @type {MetaFunction}
  */
 export const meta = () => {
-  return [{title: 'LMNT | Hydrogen'}];
+  return [{title: 'Montana Outdoor Store'}];
 };
 
 /**
@@ -100,29 +100,30 @@ function FeaturedCollection({collection}) {
  */
 function RecommendedProducts({products}) {
   return (
-      <div className="recommended-products">
-          <h1>Harrys Test</h1>
-      <h2>Recommended Products</h2>
+      <div className="recommended-products">    
       <Suspense fallback={<div>Loading...</div>}>
         <Await resolve={products}>
           {(response) => (
-            <div className="recommended-products-grid">
+            <div className="grid">
               {response
                 ? response.products.nodes.map((product) => (
                     <Link
                       key={product.id}
-                      className="recommended-product"
+                      className="search-results-item"
                       to={`/products/${product.handle}`}
                     >
-                      <Image
-                        data={product.images.nodes[0]}
-                        aspectRatio="1/1"
-                        sizes="(min-width: 45em) 20vw, 50vw"
-                      />
-                      <h4>{product.title}</h4>
-                      <small>
-                        <Money data={product.priceRange.minVariantPrice} />
-                      </small>
+                        <Image
+                      data={product.images.nodes[0]}
+                     
+                      width={50} />
+                      
+                    
+                      <div>
+                    <p>{product.title}</p>
+                    <small>
+                      <Money data={product.priceRange.minVariantPrice} />
+                    </small>
+                  </div>
                     </Link>
                   ))
                 : null}

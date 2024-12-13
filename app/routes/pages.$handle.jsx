@@ -8,7 +8,7 @@ export const meta = ({data}) => {
   return [{title: `Hydrogen | ${data?.page.title ?? ''}`}];
 };
 
-/**
+/****
  * @param {LoaderFunctionArgs} args
  */
 export async function loader(args) {

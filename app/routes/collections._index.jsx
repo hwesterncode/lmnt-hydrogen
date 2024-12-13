@@ -83,14 +83,14 @@ function CollectionItem({collection, index}) {
       to={`/collections/${collection.handle}`}
       prefetch="intent"
     >
-      {collection?.image && (
-        <Image
+      {/* {collection?.image && (
+        <<Image
           alt={collection.image.altText || collection.title}
           aspectRatio="1/1"
           data={collection.image}
           loading={index < 3 ? 'eager' : undefined}
-        />
-      )}
+        />>
+      )} */}
       <h5>{collection.title}</h5>
     </Link>
   );
