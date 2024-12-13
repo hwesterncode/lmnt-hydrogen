@@ -518,4 +518,6 @@ a {
 }p {
   font-size: 1.3rem;
   line-height: 1.4;
+}nav.footer-menu {
+  display: none;
 }
