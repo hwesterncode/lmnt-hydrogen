@@ -505,4 +505,14 @@ a {
 .product-main img {
   max-width: 100%;
   margin-left: -19px;
+}body {
+  max-width: 94vw;
+}h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}.product-price {
+  color: green;
 }
