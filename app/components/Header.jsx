@@ -11,7 +11,7 @@ export function Header({header, isLoggedIn, cart, publicStoreDomain}) {
   return (
     <header className="header">
       <NavLink prefetch="intent" to="/" style={activeLinkStyle} end>
-        <strong>Montana Outdoor Ad Network</strong>
+        <strong>w5 ad network</strong>
       </NavLink>
       <HeaderMenu
         menu={menu}
